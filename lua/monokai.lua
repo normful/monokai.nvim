@@ -455,14 +455,11 @@ function monokai.load_plugin_syntax()
         TSTagDelimiter = { fg = "#560A86" },
 
         TSString = { fg = monokai.yellow },
-        TSLiteral = { fg = monokai.yellow },
-        TSText = { fg = monokai.yellow },
-        TSTitle = { fg = monokai.yellow },
 
         TSStringRegex = { fg = monokai.purple },
         TSURI = { fg = monokai.purple },
 
-        TSUnderline = { fg = molokai.none, style="underline" },
+        TSUnderline = { fg = molokai.none, style = "underline" },
 
         -- No examples exist in currently used languages parsed by treesitter,
         -- so all are set to unique random obvious colors,
@@ -476,6 +473,10 @@ function monokai.load_plugin_syntax()
         TSNamespace = { fg = "#FDF200" },
         TSStrong = { fg = "#0FFFEA" },
         TSFuncMacro = { fg = "#FDF200" },
+
+        TSLiteral = { fg = monokai.darkred },
+        TSText = { fg = monokai.darkred },
+        TSTitle = { fg = monokai.darkred },
 
 
         LspDiagnosticsSignError = { fg = monokai.red },
