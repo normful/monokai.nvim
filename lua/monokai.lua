@@ -415,6 +415,7 @@ function monokai.load_plugin_syntax()
         TSKeywordOperator = { fg = monokai.pink },
         TSConditional = { fg = monokai.pink },
         TSRepeat = { fg = monokai.pink },
+        TSInclude = { fg = monokai.pink },
 
         TSFunction = { fg = monokai.green },
         TSMethod = { fg = monokai.green },
@@ -445,7 +446,7 @@ function monokai.load_plugin_syntax()
 
 
 
-        TSType = { fg = monokai.aqua },
+        TSType = { fg = monokai.aqua, style = "bold" },
         TSTypeBuiltin = { fg = monokai.aqua },
         TSTag = { fg = monokai.aqua },
         TSTagDelimiter = { fg = monokai.aqua },
@@ -468,10 +469,6 @@ function monokai.load_plugin_syntax()
 
 
 
-        TSNamespace = { fg = "#FDF200" },
-        TSInclude = { fg = "#037A90" },
-
-
 
         -- No examples exist in currently used languages parsed by treesitter,
         -- so all are set to unique random obvious colors,
@@ -483,6 +480,8 @@ function monokai.load_plugin_syntax()
         TSConstMacro = { fg = "#FDF200" },
         TSEmphasis = { fg = "#FDC7D7" },
         TSUnderline = { fg = "#560A86" },
+        TSNamespace = { fg = "#FDF200" },
+
 
 
 
