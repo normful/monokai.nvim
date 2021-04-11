@@ -400,7 +400,7 @@ function monokai.load_syntax()
             fg = monokai.pink
         },
         Exception = {
-            fg = monokai.pink
+            fg = monokai.purered
         }
     }
     return syntax
@@ -408,90 +408,107 @@ end
 
 function monokai.load_plugin_syntax()
     local plugin_syntax = {
-        TSFunction = {
-            fg = monokai.green
-        },
-        TSMethod = {
-            fg = monokai.green
-        },
-        TSKeywordFunction = {
-            fg = monokai.pink
-        },
-        TSProperty = {
-            fg = monokai.alternate_cyan
-        },
-        TSType = {
-            fg = monokai.aqua
-        },
-        TSPunctBracket = {
-            fg = monokai.white
-        },
-        dbui_tables = {
-            fg = monokai.white
-        },
-        LspDiagnosticsSignError = {
-            fg = monokai.red
-        },
-        LspDiagnosticsSignWarning = {
-            fg = monokai.yellow
-        },
-        LspDiagnosticsSignInformation = {
-            fg = monokai.white
-        },
-        LspDiagnosticsSignHint = {
-            fg = monokai.aqua
-        },
-        LspDiagnosticsVirtualTextError = {
-            fg = monokai.red
-        },
-        LspDiagnosticsVirtualTextWarning = {
-            fg = monokai.yellow
-        },
-        LspDiagnosticsVirtualTextInformation = {
-            fg = monokai.white
-        },
-        LspDiagnosticsVirtualTextHint = {
-            fg = monokai.aqua
-        },
-        LspDiagnosticsUnderlineError = {
-            style = "undercurl",
-            sp = monokai.red
-        },
-        LspDiagnosticsUnderlineWarning = {
-            style = "undercurl",
-            sp = monokai.yellow
-        },
-        LspDiagnosticsUnderlineInformation = {
-            style = "undercurl",
-            sp = monokai.white
-        },
-        LspDiagnosticsUnderlineHint = {
-            style = "undercurl",
-            sp = monokai.aqua
-        },
-        CursorWord0 = {
-            bg = monokai.white
-        },
-        CursorWord1 = {
-            bg = monokai.white
-        },
-        NvimTreeFolderName = {
-            fg = monokai.white
-        },
-        NvimTreeRootFolder = {
-            fg = monokai.pink
-        },
-        NvimTreeSpecialFile = {
-            fg = monokai.fg,
-            bg = monokai.none,
-            style = "NONE"
-        },
-        TelescopeBorder = {
-            fg = monokai.aqua
-        },
-        TelescopePromptBorder = {
-            fg = monokai.aqua
-        }
+        TSConstBuiltin = { fg = monokai.pink },
+        TSFuncBuiltin = { fg = monokai.pink },
+        TSTypeBuiltin = { fg = monokai.pink },
+        TSVariableBuiltin = { fg = monokai.pink },
+        TSOperator = { fg = monokai.pink },
+        TSStringEscape = { fg = monokai.pink },
+        TSKeyword = { fg = monokai.pink },
+        TSKeywordFunction = { fg = monokai.pink },
+        TSKeywordOperator = { fg = monokai.pink },
+        TSConditional = { fg = monokai.pink },
+
+
+        TSFunction = { fg = monokai.green },
+        TSMethod = { fg = monokai.green },
+        TSFuncMacro = { fg = monokai.green },
+
+        TSFloat = { fg = monokai.purple },
+        TSBoolean = { fg = monokai.purple },
+        TSNumber = { fg = monokai.purple },
+
+        TSError = { fg = monokai.purered },
+        TSException = { fg = monokai.purered },
+
+        TSAttribute = { fg = monokai.orange },
+        TSField = { fg = monokai.orange },
+        TSParameter = { fg = monokai.orange },
+        TSParameterReference = { fg = monokai.orange },
+        TSProperty = { fg = monokai.orange },
+
+        TSConstructor = { fg = monokai.aqua },
+        TSType = { fg = monokai.aqua },
+        TSStructure = { fg = monokai.aqua },
+
+        TSString = { fg = monokai.yellow },
+        TSLiteral = { fg = monokai.yellow },
+
+        TSStringRegex = { fg = monokai.grey },
+        TSURI = { fg = monokai.grey },
+
+
+        TSTag = { fg = monokai.alternate_cyan },
+        TSTagDelimiter = { fg = monokai.alternate_cyan },
+
+
+        TSStrong = { fg = monokai.white, style = "bold" },
+        TSConstant = { fg = monokai.white, style = "bold" },
+
+
+
+        TSNamespace = { fg = monokai.addbg },
+        TSInclude = { fg = monokai.white },
+
+
+        TSAnnotation = { fg = monokai.white },
+        TSCharacter = { fg = monokai.white },
+        TSConstMacro = { fg = monokai.white },
+        TSEmphasis = { fg = monokai.white },
+        TSLabel = { fg = monokai.white },
+
+        TSPunctBracket = { fg = monokai.white },
+        TSPunctDelimiter = { fg = monokai.white },
+        TSPunctSpecial = { fg = monokai.white },
+        TSRepeat = { fg = monokai.white },
+        TSText = { fg = monokai.white },
+        TSTitle = { fg = monokai.white },
+        TSUnderline = { fg = monokai.white },
+        TSVariable = { fg = monokai.white },
+
+
+
+
+
+
+
+
+
+
+        dbui_tables = { fg = monokai.white },
+
+        LspDiagnosticsSignError = { fg = monokai.red },
+        LspDiagnosticsSignWarning = { fg = monokai.yellow },
+        LspDiagnosticsSignInformation = { fg = monokai.white },
+        LspDiagnosticsSignHint = { fg = monokai.aqua },
+        LspDiagnosticsVirtualTextError = { fg = monokai.red },
+        LspDiagnosticsVirtualTextWarning = { fg = monokai.yellow },
+        LspDiagnosticsVirtualTextInformation = { fg = monokai.white },
+        LspDiagnosticsVirtualTextHint = { fg = monokai.aqua },
+        LspDiagnosticsUnderlineError = { style = "undercurl", sp = monokai.red },
+        LspDiagnosticsUnderlineWarning = { style = "undercurl", sp = monokai.yellow },
+        LspDiagnosticsUnderlineInformation = { style = "undercurl", sp = monokai.white },
+        LspDiagnosticsUnderlineHint = { style = "undercurl", sp = monokai.aqua },
+
+        CursorWord0 = { bg = monokai.white },
+        CursorWord1 = { bg = monokai.white },
+
+        NvimTreeFolderName = { fg = monokai.white },
+        NvimTreeRootFolder = { fg = monokai.pink },
+        NvimTreeSpecialFile = { fg = monokai.fg, bg = monokai.none, style = "NONE" },
+
+        TelescopeBorder = { fg = monokai.aqua },
+        TelescopePromptBorder = { fg = monokai.aqua }
     }
     return plugin_syntax
 end
