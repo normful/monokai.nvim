@@ -431,8 +431,9 @@ function monokai.load_plugin_syntax()
 
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
-        TSParameter = { fg = monokai.orange },
-        TSProperty = { fg = monokai.addbg },
+
+        TSParameter = { fg = monokai.white },
+        TSProperty = { fg = monokai.white },
 
         TSType = { fg = monokai.aqua },
         TSTypeBuiltin = { fg = monokai.aqua },
