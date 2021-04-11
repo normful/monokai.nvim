@@ -459,35 +459,30 @@ function monokai.load_plugin_syntax()
         TSPunctBracket = { fg = monokai.fg_alt },
         TSPunctDelimiter = { fg = monokai.fg_alt },
         TSPunctSpecial = { fg = monokai.fg_alt, style = "bold" },
+        TSConstructor = { fg = monokai.fg_alt },
 
         TSText = { fg = monokai.fg },
         TSTitle = { fg = monokai.fg },
 
-        TSNamespace = { fg = monokai.alternate_green },
-        TSInclude = { fg = monokai.alternate_green },
-
-
-        -- Unsure
-        TSConstructor = { fg = monokai.green },
-        TSStructure = { fg = monokai.red },
 
 
 
 
-        TSCharacter = { fg = monokai.orange },
-        TSAnnotation = { fg = monokai.pink },
-
-
-        TSLabel = { fg = monokai.purple },
-
-        TSConstMacro = { fg = monokai.orange },
-        TSEmphasis = { fg = monokai.cyan },
-        TSUnderline = { fg = monokai.yellow },
-        -- Unsure
+        TSNamespace = { fg = "#FDF200" },
+        TSInclude = { fg = "#037A90" },
 
 
 
-
+        -- No examples exist in currently used languages parsed by treesitter,
+        -- so all are set to unique random obvious colors,
+        -- to be easily noticed in the future.
+        TSStructure = { fg = "#C6BDEA" },
+        TSCharacter = { fg = "#0310EA" },
+        TSAnnotation = { fg = "#037A90" },
+        TSLabel = { fg = "#FEC763" },
+        TSConstMacro = { fg = "#FDF200" },
+        TSEmphasis = { fg = "#FDC7D7" },
+        TSUnderline = { fg = "#560A86" },
 
 
 
