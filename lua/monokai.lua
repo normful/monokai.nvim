@@ -449,10 +449,10 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
 
-        TSType = { fg = monokai.aqua },
-        TSTypeBuiltin = { fg = "#C6BDEA" },
-        TSTag = { fg = "#560A86" },
-        TSTagDelimiter = { fg = "#560A86" },
+        TSType = { fg = "#C6BDEA" },
+        TSTypeBuiltin = { fg = monokai.aqua },
+        TSTag = { fg = "#37A906" },
+        TSTagDelimiter = { fg = "#37A906" },
 
         TSString = { fg = monokai.yellow },
 
