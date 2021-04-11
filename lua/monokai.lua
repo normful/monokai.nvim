@@ -441,10 +441,18 @@ function monokai.load_plugin_syntax()
         TSConstBuiltin = { fg = monokai.white, style = "bold" },
         TSConstant = { fg = monokai.white, style = "bold" },
 
+
+
+
+        -- Unsure
+        TSTypeBuiltin = { fg = monokai.addbg },
+        TSConstructor = { fg = monokai.darkred },
+        TSStructure = { fg = monokai.red },
+        -- Unsure
+
+
+
         TSType = { fg = monokai.aqua },
-        TSTypeBuiltin = { fg = monokai.aqua },
-        TSConstructor = { fg = monokai.aqua },
-        TSStructure = { fg = monokai.aqua },
         TSTagDelimiter = { fg = monokai.aqua },
         TSTag = { fg = monokai.aqua },
 
@@ -461,15 +469,21 @@ function monokai.load_plugin_syntax()
         TSText = { fg = monokai.fg },
         TSTitle = { fg = monokai.fg },
 
+        TSNamespace = { fg = monokai.alternate_green },
+        TSInclude = { fg = monokai.alternate_green },
+
+
+
+
+
         -- Unsure
-        TSNamespace = { fg = monokai.darkred },
-        TSInclude = { fg = monokai.darkred },
         TSAnnotation = { fg = monokai.darkred },
         TSCharacter = { fg = monokai.darkred },
         TSConstMacro = { fg = monokai.darkred },
         TSEmphasis = { fg = monokai.darkred },
         TSLabel = { fg = monokai.darkred },
         TSUnderline = { fg = monokai.darkred },
+        -- Unsure
 
 
 
