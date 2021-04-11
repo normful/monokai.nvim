@@ -20,11 +20,13 @@ local monokai = {
     black = "#000000",
     pink = "#f92672",
     green = "#a6e22e",
+    dark_green = "#37a906",
     aqua = "#66d9ef",
     cyan = "#A1EFE4",
     yellow = "#e6db74",
     orange = "#fd971f",
     purple = "#ae81ff",
+    light_purple = "#d6d0f0",
     red = "#e95678",
     purered = "#ff0000",
     darkred = "#5f0000",
@@ -449,15 +451,16 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
 
-        TSType = { fg = "#C6BDEA" },
+        TSType = { fg = monokai.light_purple },
         TSTypeBuiltin = { fg = monokai.aqua },
-        TSTag = { fg = "#37A906" },
-        TSTagDelimiter = { fg = "#37A906" },
+
+        TSTag = { fg = monokai.dark_green },
+        TSTagDelimiter = { fg = monokai.dark_green },
 
         TSString = { fg = monokai.yellow },
 
-        TSStringRegex = { fg = monokai.purple },
-        TSURI = { fg = monokai.purple },
+        TSStringRegex = { fg = monokai.base7 },
+        TSURI = { fg = monokai.base6 },
 
         TSUnderline = { fg = monokai.none, style = "underline" },
 
@@ -471,8 +474,9 @@ function monokai.load_plugin_syntax()
         TSConstMacro = { fg = "#604340" },
         TSEmphasis = { fg = "#FDC7D7" },
         TSNamespace = { fg = "#FDF200" },
-        TSStrong = { fg = "#0FFFEA" },
         TSFuncMacro = { fg = "#FDF200" },
+
+        TSStrong = { fg = monokai.none, style = "bold" },
 
         TSLiteral = { fg = monokai.darkred },
         TSText = { fg = monokai.darkred },
