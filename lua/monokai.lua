@@ -64,6 +64,11 @@ end
 
 function monokai.highlight(group, color)
     local style = color.style and "gui=" .. color.style or "gui=NONE"
+
+    if color.style == "undercurl" then
+      style = style .. " cterm=undercurl"
+    end
+
     local fg = color.fg and "guifg = " .. color.fg or "guifg = NONE"
     local bg = color.bg and "guibg = " .. color.bg or "guibg = NONE"
     local sp = color.sp and "guisp = " .. color.sp or ""
@@ -408,6 +413,18 @@ end
 
 function monokai.load_plugin_syntax()
     local plugin_syntax = {
+        TSParameterReference = { fg = monokai.white },
+        TSVariable = { fg = monokai.white },
+        TSParameter = { fg = monokai.white },
+        TSProperty = { fg = monokai.white },
+        TSConstructor = { fg = monokai.white },
+        TSConstant = { fg = monokai.white },
+        TSConstBuiltin = { fg = monokai.white },
+
+        TSPunctBracket = { fg = monokai.fg_alt },
+        TSPunctDelimiter = { fg = monokai.fg_alt },
+        TSPunctSpecial = { fg = monokai.fg_alt },
+
         TSOperator = { fg = monokai.pink },
         TSStringEscape = { fg = monokai.pink },
         TSKeyword = { fg = monokai.pink },
@@ -420,7 +437,7 @@ function monokai.load_plugin_syntax()
         TSFunction = { fg = monokai.green },
         TSMethod = { fg = monokai.green },
         TSFuncMacro = { fg = monokai.green },
-        TSFuncBuiltin = { fg = monokai.alternate_green },
+        TSFuncBuiltin = { fg = monokai.green },
 
         TSFloat = { fg = monokai.purple },
         TSBoolean = { fg = monokai.purple },
@@ -433,19 +450,6 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
 
-        TSParameterReference = { fg = monokai.white },
-        TSVariable = { fg = monokai.white },
-        TSParameter = { fg = monokai.white },
-        TSProperty = { fg = monokai.white },
-
-        TSStrong = { fg = monokai.white },
-        TSConstBuiltin = { fg = monokai.white },
-        TSConstant = { fg = monokai.white },
-
-
-
-
-
         TSType = { fg = monokai.aqua },
         TSTypeBuiltin = { fg = monokai.aqua },
         TSTag = { fg = monokai.aqua },
@@ -453,22 +457,11 @@ function monokai.load_plugin_syntax()
 
         TSString = { fg = monokai.yellow },
         TSLiteral = { fg = monokai.yellow },
+        TSText = { fg = monokai.yellow },
+        TSTitle = { fg = monokai.yellow },
 
-        TSStringRegex = { fg = monokai.grey },
-        TSURI = { fg = monokai.grey },
-
-        TSPunctBracket = { fg = monokai.fg_alt },
-        TSPunctDelimiter = { fg = monokai.fg_alt },
-        TSPunctSpecial = { fg = monokai.fg_alt },
-        TSConstructor = { fg = monokai.fg_alt },
-
-        TSText = { fg = monokai.fg },
-        TSTitle = { fg = monokai.fg },
-
-
-
-
-
+        TSStringRegex = { fg = monokai.purple },
+        TSURI = { fg = monokai.purple },
 
         -- No examples exist in currently used languages parsed by treesitter,
         -- so all are set to unique random obvious colors,
@@ -477,17 +470,11 @@ function monokai.load_plugin_syntax()
         TSCharacter = { fg = "#0310EA" },
         TSAnnotation = { fg = "#037A90" },
         TSLabel = { fg = "#FEC763" },
-        TSConstMacro = { fg = "#FDF200" },
+        TSConstMacro = { fg = "#604340" },
         TSEmphasis = { fg = "#FDC7D7" },
-        TSUnderline = { fg = "#560A86" },
+        TSUnderline = { fg = "#560A86", style="underline" },
         TSNamespace = { fg = "#FDF200" },
-
-
-
-
-
-
-        dbui_tables = { fg = monokai.white },
+        TSStrong = { fg = "#0FFFEA" },
 
         LspDiagnosticsSignError = { fg = monokai.red },
         LspDiagnosticsSignWarning = { fg = monokai.yellow },
@@ -510,7 +497,9 @@ function monokai.load_plugin_syntax()
         NvimTreeSpecialFile = { fg = monokai.fg, bg = monokai.none, style = "NONE" },
 
         TelescopeBorder = { fg = monokai.aqua },
-        TelescopePromptBorder = { fg = monokai.aqua }
+        TelescopePromptBorder = { fg = monokai.aqua },
+
+        dbui_tables = { fg = monokai.white },
     }
     return plugin_syntax
 end
