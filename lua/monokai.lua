@@ -434,7 +434,6 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
         TSParameter = { fg = monokai.orange },
-        TSParameterReference = { fg = monokai.orange },
         TSProperty = { fg = monokai.orange },
 
         TSConstructor = { fg = monokai.aqua },
@@ -455,26 +454,26 @@ function monokai.load_plugin_syntax()
         TSStrong = { fg = monokai.white, style = "bold" },
         TSConstant = { fg = monokai.white, style = "bold" },
 
+        TSInclude = { fg = monokai.pink }, -- Unsure
+        TSParameterReference = { fg = monokai.white }, --Unsure
 
 
         TSNamespace = { fg = monokai.addbg },
-        TSInclude = { fg = monokai.white },
 
-
-        TSAnnotation = { fg = monokai.white },
-        TSCharacter = { fg = monokai.white },
-        TSConstMacro = { fg = monokai.white },
-        TSEmphasis = { fg = monokai.white },
-        TSLabel = { fg = monokai.white },
-
-        TSPunctBracket = { fg = monokai.white },
-        TSPunctDelimiter = { fg = monokai.white },
-        TSPunctSpecial = { fg = monokai.white },
-        TSRepeat = { fg = monokai.white },
+        -- Unsure
+        TSAnnotation = { fg = monokai.darkred },
+        TSCharacter = { fg = monokai.darkred },
+        TSConstMacro = { fg = monokai.darkred },
+        TSEmphasis = { fg = monokai.alternateyellow },
+        TSLabel = { fg = monokai.alternateyellow },
+        TSPunctBracket = { fg = monokai.alternateyellow },
+        TSPunctDelimiter = { fg = monokai.changebg },
+        TSPunctSpecial = { fg = monokai.changebg },
+        TSRepeat = { fg = monokai.changebg },
         TSText = { fg = monokai.white },
         TSTitle = { fg = monokai.white },
-        TSUnderline = { fg = monokai.white },
-        TSVariable = { fg = monokai.white },
+        TSUnderline = { fg = "#515121" },
+        TSVariable = { fg = "#AA1FFC" },
 
 
 
