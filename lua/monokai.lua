@@ -436,8 +436,9 @@ function monokai.load_plugin_syntax()
 
         TSFunction = { fg = monokai.green },
         TSMethod = { fg = monokai.green },
-        TSFuncMacro = { fg = monokai.green },
         TSFuncBuiltin = { fg = monokai.green },
+
+        TSFuncMacro = { fg = "#FDF200" },
 
         TSFloat = { fg = monokai.purple },
         TSBoolean = { fg = monokai.purple },
@@ -451,7 +452,7 @@ function monokai.load_plugin_syntax()
         TSField = { fg = monokai.orange },
 
         TSType = { fg = monokai.aqua },
-        TSTypeBuiltin = { fg = monokai.aqua },
+        TSTypeBuiltin = { fg = "#C6BDEA" },
         TSTag = { fg = monokai.aqua },
         TSTagDelimiter = { fg = monokai.aqua },
 
