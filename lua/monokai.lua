@@ -459,7 +459,7 @@ function monokai.load_plugin_syntax()
         TSStringRegex = { fg = monokai.purple },
         TSURI = { fg = monokai.purple },
 
-        TSUnderline = { fg = molokai.none, style = "underline" },
+        TSUnderline = { fg = monokai.none, style = "underline" },
 
         -- No examples exist in currently used languages parsed by treesitter,
         -- so all are set to unique random obvious colors,
