@@ -106,9 +106,6 @@ function monokai.load_syntax()
             fg = monokai.bg,
             bg = monokai.yellow
         },
-        CursorLineNr = {
-            fg = monokai.orange
-        },
         MatchParen = {
             fg = monokai.pink,
             bg = monokai.none
@@ -141,7 +138,10 @@ function monokai.load_syntax()
             bg = monokai.bg
         },
         LineNr = {
-            fg = monokai.base4
+            fg = monokai.base6,
+        },
+        CursorLineNr = {
+            fg = monokai.base8,
         },
         SignColumn = {
             fg = monokai.fg,
@@ -415,8 +415,6 @@ function monokai.load_plugin_syntax()
         TSKeywordOperator = { fg = monokai.pink },
         TSConditional = { fg = monokai.pink },
 
-        TSConstBuiltin = { fg = monokai.white, style = "bold" },
-
         TSFunction = { fg = monokai.green },
         TSMethod = { fg = monokai.green },
         TSFuncMacro = { fg = monokai.green },
@@ -432,8 +430,14 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
 
+        TSParameterReference = { fg = monokai.white },
+        TSVariable = { fg = monokai.white },
         TSParameter = { fg = monokai.white },
         TSProperty = { fg = monokai.white },
+
+        TSStrong = { fg = monokai.white, style = "bold" },
+        TSConstBuiltin = { fg = monokai.white, style = "bold" },
+        TSConstant = { fg = monokai.white, style = "bold" },
 
         TSType = { fg = monokai.aqua },
         TSTypeBuiltin = { fg = monokai.aqua },
@@ -448,35 +452,29 @@ function monokai.load_plugin_syntax()
         TSURI = { fg = monokai.grey },
 
 
-        TSTag = { fg = monokai.alternate_cyan },
-        TSTagDelimiter = { fg = monokai.orange },
+        -- e.g. JSX < >
+        TSTagDelimiter = { fg = monokai.aqua },
 
 
-        TSStrong = { fg = monokai.white, style = "bold" },
-        TSConstant = { fg = monokai.white, style = "bold" },
 
-        TSVariable = { fg = monokai.white },
+        TSPunctBracket = { fg = monokai.fg_alt },
+        TSPunctDelimiter = { fg = monokai.fg_alt },
+        TSPunctSpecial = { fg = monokai.fg_alt, style = "bold" },
 
+        TSText = { fg = monokai.fg },
+        TSTitle = { fg = monokai.fg },
 
         -- Unsure
-        TSNamespace = { fg = monokai.cyan },
-        TSInclude = { fg = monokai.pink },
-        TSParameterReference = { fg = monokai.white },
-        TSRepeat = { fg = monokai.pink },
-
+        TSTag = { fg = monokai.purered },
+        TSNamespace = { fg = monokai.darkred },
+        TSInclude = { fg = monokai.darkred },
+        TSRepeat = { fg = monokai.darkred },
         TSAnnotation = { fg = monokai.darkred },
         TSCharacter = { fg = monokai.darkred },
         TSConstMacro = { fg = monokai.darkred },
-
-        TSEmphasis = { fg = monokai.alternateyellow },
-        TSLabel = { fg = monokai.alternateyellow },
-        TSText = { fg = monokai.white },
-        TSTitle = { fg = monokai.white },
-        TSUnderline = { fg = "#515121" },
-
-        TSPunctBracket = { fg = monokai.fg_alt },
-        TSPunctDelimiter = { fg = monokai.alternate_yellow },
-        TSPunctSpecial = { fg = monokai.alternate_green },
+        TSEmphasis = { fg = monokai.darkred },
+        TSLabel = { fg = monokai.darkred },
+        TSUnderline = { fg = monokai.darkred },
 
 
 
