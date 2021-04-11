@@ -468,7 +468,7 @@ function monokai.load_plugin_syntax()
 
 
         -- Unsure
-        TSConstructor = { fg = monokai.darkred },
+        TSConstructor = { fg = monokai.green },
         TSStructure = { fg = monokai.red },
 
 
@@ -478,11 +478,11 @@ function monokai.load_plugin_syntax()
         TSAnnotation = { fg = monokai.pink },
 
 
+        TSLabel = { fg = monokai.purple },
 
-        TSConstMacro = { fg = monokai.darkred },
-        TSEmphasis = { fg = monokai.darkred },
-        TSLabel = { fg = monokai.darkred },
-        TSUnderline = { fg = monokai.darkred },
+        TSConstMacro = { fg = monokai.orange },
+        TSEmphasis = { fg = monokai.cyan },
+        TSUnderline = { fg = monokai.yellow },
         -- Unsure
 
 
