@@ -438,15 +438,15 @@ function monokai.load_plugin_syntax()
         TSParameter = { fg = monokai.white },
         TSProperty = { fg = monokai.white },
 
-        TSStrong = { fg = monokai.white, style = "bold" },
-        TSConstBuiltin = { fg = monokai.white, style = "bold" },
-        TSConstant = { fg = monokai.white, style = "bold" },
+        TSStrong = { fg = monokai.white },
+        TSConstBuiltin = { fg = monokai.white },
+        TSConstant = { fg = monokai.white },
 
 
 
 
 
-        TSType = { fg = monokai.aqua, style = "bold" },
+        TSType = { fg = monokai.aqua },
         TSTypeBuiltin = { fg = monokai.aqua },
         TSTag = { fg = monokai.aqua },
         TSTagDelimiter = { fg = monokai.aqua },
@@ -459,7 +459,7 @@ function monokai.load_plugin_syntax()
 
         TSPunctBracket = { fg = monokai.fg_alt },
         TSPunctDelimiter = { fg = monokai.fg_alt },
-        TSPunctSpecial = { fg = monokai.fg_alt, style = "bold" },
+        TSPunctSpecial = { fg = monokai.fg_alt },
         TSConstructor = { fg = monokai.fg_alt },
 
         TSText = { fg = monokai.fg },
