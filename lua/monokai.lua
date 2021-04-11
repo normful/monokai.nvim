@@ -432,13 +432,13 @@ function monokai.load_plugin_syntax()
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
         TSParameter = { fg = monokai.orange },
-        TSProperty = { fg = monokai.orange },
+        TSProperty = { fg = monokai.addbg },
 
-        TSConstructor = { fg = monokai.aqua },
         TSType = { fg = monokai.aqua },
+        TSTypeBuiltin = { fg = monokai.aqua },
+        TSConstructor = { fg = monokai.aqua },
         TSStructure = { fg = monokai.aqua },
-        TSTypeBuiltin = { fg = monokai.alternate_blue },
-        TSVariableBuiltin = { fg = monokai.alternate_blue },
+        TSVariableBuiltin = { fg = monokai.purple },
 
         TSString = { fg = monokai.yellow },
         TSLiteral = { fg = monokai.yellow },
@@ -448,7 +448,7 @@ function monokai.load_plugin_syntax()
 
 
         TSTag = { fg = monokai.alternate_cyan },
-        TSTagDelimiter = { fg = monokai.alternate_cyan },
+        TSTagDelimiter = { fg = monokai.orange },
 
 
         TSStrong = { fg = monokai.white, style = "bold" },
@@ -466,15 +466,16 @@ function monokai.load_plugin_syntax()
         TSAnnotation = { fg = monokai.darkred },
         TSCharacter = { fg = monokai.darkred },
         TSConstMacro = { fg = monokai.darkred },
+
         TSEmphasis = { fg = monokai.alternateyellow },
         TSLabel = { fg = monokai.alternateyellow },
         TSText = { fg = monokai.white },
         TSTitle = { fg = monokai.white },
         TSUnderline = { fg = "#515121" },
 
-        TSPunctBracket = { fg = monokai.purered },
-        TSPunctDelimiter = { fg = monokai.addbg },
-        TSPunctSpecial = { fg = monokai.yellow },
+        TSPunctBracket = { fg = monokai.fg_alt },
+        TSPunctDelimiter = { fg = monokai.alternate_yellow },
+        TSPunctSpecial = { fg = monokai.alternate_green },
 
 
 
