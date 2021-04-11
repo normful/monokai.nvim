@@ -418,7 +418,7 @@ function monokai.load_plugin_syntax()
             fg = monokai.pink
         },
         TSProperty = {
-            fg = monokai.white
+            fg = monokai.alternate_cyan
         },
         TSType = {
             fg = monokai.aqua
