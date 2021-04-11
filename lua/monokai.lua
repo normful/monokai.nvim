@@ -414,6 +414,7 @@ function monokai.load_plugin_syntax()
         TSKeywordFunction = { fg = monokai.pink },
         TSKeywordOperator = { fg = monokai.pink },
         TSConditional = { fg = monokai.pink },
+        TSRepeat = { fg = monokai.pink },
 
         TSFunction = { fg = monokai.green },
         TSMethod = { fg = monokai.green },
@@ -423,6 +424,7 @@ function monokai.load_plugin_syntax()
         TSFloat = { fg = monokai.purple },
         TSBoolean = { fg = monokai.purple },
         TSNumber = { fg = monokai.purple },
+        TSVariableBuiltin = { fg = monokai.purple },
 
         TSError = { fg = monokai.purered },
         TSException = { fg = monokai.purered },
@@ -443,19 +445,14 @@ function monokai.load_plugin_syntax()
         TSTypeBuiltin = { fg = monokai.aqua },
         TSConstructor = { fg = monokai.aqua },
         TSStructure = { fg = monokai.aqua },
-        TSVariableBuiltin = { fg = monokai.purple },
+        TSTagDelimiter = { fg = monokai.aqua },
+        TSTag = { fg = monokai.aqua },
 
         TSString = { fg = monokai.yellow },
         TSLiteral = { fg = monokai.yellow },
 
         TSStringRegex = { fg = monokai.grey },
         TSURI = { fg = monokai.grey },
-
-
-        -- e.g. JSX < >
-        TSTagDelimiter = { fg = monokai.aqua },
-
-
 
         TSPunctBracket = { fg = monokai.fg_alt },
         TSPunctDelimiter = { fg = monokai.fg_alt },
@@ -465,10 +462,8 @@ function monokai.load_plugin_syntax()
         TSTitle = { fg = monokai.fg },
 
         -- Unsure
-        TSTag = { fg = monokai.purered },
         TSNamespace = { fg = monokai.darkred },
         TSInclude = { fg = monokai.darkred },
-        TSRepeat = { fg = monokai.darkred },
         TSAnnotation = { fg = monokai.darkred },
         TSCharacter = { fg = monokai.darkred },
         TSConstMacro = { fg = monokai.darkred },
