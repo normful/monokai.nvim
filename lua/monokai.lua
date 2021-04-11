@@ -438,8 +438,6 @@ function monokai.load_plugin_syntax()
         TSMethod = { fg = monokai.green },
         TSFuncBuiltin = { fg = monokai.green },
 
-        TSFuncMacro = { fg = "#FDF200" },
-
         TSFloat = { fg = monokai.purple },
         TSBoolean = { fg = monokai.purple },
         TSNumber = { fg = monokai.purple },
@@ -453,8 +451,8 @@ function monokai.load_plugin_syntax()
 
         TSType = { fg = monokai.aqua },
         TSTypeBuiltin = { fg = "#C6BDEA" },
-        TSTag = { fg = monokai.aqua },
-        TSTagDelimiter = { fg = monokai.aqua },
+        TSTag = { fg = "#560A86" },
+        TSTagDelimiter = { fg = "#560A86" },
 
         TSString = { fg = monokai.yellow },
         TSLiteral = { fg = monokai.yellow },
@@ -463,6 +461,8 @@ function monokai.load_plugin_syntax()
 
         TSStringRegex = { fg = monokai.purple },
         TSURI = { fg = monokai.purple },
+
+        TSUnderline = { fg = molokai.none, style="underline" },
 
         -- No examples exist in currently used languages parsed by treesitter,
         -- so all are set to unique random obvious colors,
@@ -473,9 +473,10 @@ function monokai.load_plugin_syntax()
         TSLabel = { fg = "#FEC763" },
         TSConstMacro = { fg = "#604340" },
         TSEmphasis = { fg = "#FDC7D7" },
-        TSUnderline = { fg = "#560A86", style="underline" },
         TSNamespace = { fg = "#FDF200" },
         TSStrong = { fg = "#0FFFEA" },
+        TSFuncMacro = { fg = "#FDF200" },
+
 
         LspDiagnosticsSignError = { fg = monokai.red },
         LspDiagnosticsSignWarning = { fg = monokai.yellow },
