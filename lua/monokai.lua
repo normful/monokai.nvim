@@ -445,8 +445,8 @@ function monokai.load_plugin_syntax()
         TSNumber = { fg = monokai.purple },
         TSVariableBuiltin = { fg = monokai.purple },
 
-        TSError = { fg = monokai.purered },
-        TSException = { fg = monokai.purered },
+        TSError = { fg = monokai.red },
+        TSException = { fg = monokai.red },
 
         TSAttribute = { fg = monokai.orange },
         TSField = { fg = monokai.orange },
