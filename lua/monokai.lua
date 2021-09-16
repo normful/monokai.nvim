@@ -482,19 +482,42 @@ function monokai.load_plugin_syntax()
         TSText = { fg = monokai.darkred },
         TSTitle = { fg = monokai.darkred },
 
+        -- See `:h lsp-highlight`
+
+        LspReferenceText = { fg = monokai.white },
+        LspReferenceRead = { fg = monokai.orange },
+        LspReferenceWrite = { fg = monokai.aqua },
+
+        LspDiagnosticsDefaultError = { fg = monokai.red },
+        LspDiagnosticsDefaultWarning = { fg = monokai.yellow },
+        LspDiagnosticsDefaultInformation = { fg = monokai.white },
+        LspDiagnosticsDefaultHint = { fg = monokai.aqua },
+
+        LspDiagnosticsVirtualTextError = { fg = monokai.red },
+        LspDiagnosticsVirtualTextWarning = { fg = monokai.yellow },
+        LspDiagnosticsVirtualTextInformation = { fg = monokai.white },
+        LspDiagnosticsVirtualTextHint = { fg = monokai.aqua },
+
+        LspDiagnosticsUnderlineError = { style = "undercurl", sp = monokai.red },
+        LspDiagnosticsUnderlineWarning = { style = "undercurl", sp = monokai.yellow },
+        LspDiagnosticsUnderlineInformation = { style = "undercurl", sp = monokai.white },
+        LspDiagnosticsUnderlineHint = { style = "undercurl", sp = monokai.aqua },
+
+        LspDiagnosticsFloatingError = { fg = monokai.red },
+        LspDiagnosticsFloatingWarning = { fg = monokai.yellow },
+        LspDiagnosticsFloatingInformation = { fg = monokai.white },
+        LspDiagnosticsFloatingHint = { fg = monokai.aqua },
 
         LspDiagnosticsSignError = { fg = monokai.red },
         LspDiagnosticsSignWarning = { fg = monokai.yellow },
         LspDiagnosticsSignInformation = { fg = monokai.white },
         LspDiagnosticsSignHint = { fg = monokai.aqua },
-        LspDiagnosticsVirtualTextError = { fg = monokai.red },
-        LspDiagnosticsVirtualTextWarning = { fg = monokai.yellow },
-        LspDiagnosticsVirtualTextInformation = { fg = monokai.white },
-        LspDiagnosticsVirtualTextHint = { fg = monokai.aqua },
-        LspDiagnosticsUnderlineError = { style = "undercurl", sp = monokai.red },
-        LspDiagnosticsUnderlineWarning = { style = "undercurl", sp = monokai.yellow },
-        LspDiagnosticsUnderlineInformation = { style = "undercurl", sp = monokai.white },
-        LspDiagnosticsUnderlineHint = { style = "undercurl", sp = monokai.aqua },
+
+        LspCodeLens = { fg = monokai.cyan },
+        LspCodeLensSeparator = { fg = monokai.purple },
+        LspSignatureActiveParameter = { fg = monokai.green },
+
+        -- End of highlight groups documented in `:h lsp-highlight`
 
         CursorWord0 = { bg = monokai.white },
         CursorWord1 = { bg = monokai.white },
