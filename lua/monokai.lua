@@ -478,9 +478,9 @@ function monokai.load_plugin_syntax()
 
         TSStrong = { fg = monokai.none, style = "bold" },
 
-        TSLiteral = { fg = monokai.darkred },
-        TSText = { fg = monokai.darkred },
-        TSTitle = { fg = monokai.darkred },
+        TSLiteral = { fg = monokai.yellow },
+        TSText = { fg = monokai.yellow },
+        TSTitle = { fg = monokai.yellow },
 
         -- See `:h lsp-highlight`
 
